@@ -51,10 +51,10 @@ app.use('/login', express.static(path.join(__dirname, 'login'))); // Serve stati
 
 // Serve main page
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.get('/main.html', (req, res) => {
+app.get('main.html', (req, res) => {
     const mainFilePath = path.join(__dirname, 'main.html');
     fs.stat(mainFilePath, (err, stats) => {
         if (err || !stats.isFile()) {
@@ -136,7 +136,7 @@ app.post('/login', (req, res) => {
     });
 });
 
-app.get('/main.html', (req, res) => {
+app.get('main.html', (req, res) => {
     const mainFilePath = path.join(__dirname, 'main.html');
     fs.stat(mainFilePath, (err, stats) => {
         if (err || !stats.isFile()) {
