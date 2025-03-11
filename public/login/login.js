@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Server response data:', data); // Log the response data
             if (data.message === 'Login successful') {
                 // Redirect to main.html
-                window.location.href = '../public/main.html';
+                window.location.href = '../main.html';
             } else {
                 alert('Invalid username or password');
             }
