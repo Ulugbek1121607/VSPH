@@ -475,10 +475,10 @@ nav ul li a.active, nav ul li a:hover {
                         <img src="${journal.imagePath}" alt="${journal.journalName}">
                         <div class="journal-info">
                             <h3>${journal.journalName}</h3>
-                            <a>Author: ${journal.author}</a>
-                            <p>ISSN Online: ${journal.issn}</p>
-                            <a href="#">🧑‍🏫 Become a Reviewer</a>
-                            <a href="#">📝 Submit an Article</a>
+                            <a>Author: ${journal.author ? journal.author : 'N/A'}</a>
+                            <p><strong>ISSN:</strong> <span style="color: black;">${journal.issn}</span></p>
+                            <a href="login/login.html">🧑‍🏫 Become a Reviewer</a>
+                            <a href="informations/add-journal.html">📝 Submit an Article</a>
                         </div>
                     `;
                     journalList.appendChild(journalDiv);
