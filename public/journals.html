@@ -15,20 +15,31 @@
             color:black;
         }
 
-        header {
-            background-color:rgb(7, 7, 164);
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        /* Header */
+header {
+    background-color:#1e3a5f;
+    padding: 10px 0;
+    border-bottom: 3px solid #1e3a5f;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 1.5em;
-        }
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 300px;
+    height: 30px;
+    margin-right: 10px;
+}
         nav {
             background-color:blue;
             padding: 10px;
@@ -186,7 +197,11 @@
 </head>
 <body>
     <header>
-        <h1>Vertex Science Publishing House</h1>
+        <div class="header-container">
+            <div class="logo">
+                <img src="logo.png" alt="SciencePG Logo">
+            </div>
+        </div>
     </header>
     <nav>
         <a href="main.html" class="home-link">Home</a>
