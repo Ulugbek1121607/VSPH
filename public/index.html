@@ -105,7 +105,9 @@
                     const journalDiv = document.createElement('div');
                     journalDiv.classList.add('journal');
                     journalDiv.innerHTML = `
-                        <img src="${journal.imagePath}" alt="${journal.journalName}">
+                        <a href="${journal.filePath}" target="_blank">
+                            <img src="${journal.imagePath}" alt="${journal.journalName}">
+                        </a>
                         <div class="journal-info">
                             <h3>${journal.journalName}</h3>
                             <a>Author: ${journal.author ? journal.author : 'N/A'}</a>
